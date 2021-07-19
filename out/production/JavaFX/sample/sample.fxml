@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Button layoutX="74.0" layoutY="136.0" mnemonicParsing="false" onAction="#switchToMainUI" text="Button" />
+            <TextField fx:id="latitude" layoutX="26.0" layoutY="31.0" text="Type the latitude" />
+            <TextField fx:id="longitude" layoutX="26.0" layoutY="75.0" text="Type the longitude" />
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>

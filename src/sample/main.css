@@ -1,0 +1,78 @@
+#cityName{
+    -fx-font-size: 40;
+    -fx-font: Roboto;
+}
+.button{
+    -fx-font: Roboto;
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-border-color: black;
+    -fx-font-size: 15;
+}
+
+#menu{
+    -fx-background-color: transparent;
+    /*-fx-border-color: black;*/
+}
+
+.label{
+    -fx-font: Roboto;
+    -fx-font-size: 24;
+    -fx-font-color: white;
+    -fx-text-fill: white;
+}
+
+
+
+.button:hover{
+    -fx-background-color: #57bcff;
+}
+
+.button:pressed{
+    -fx-background-color: #027dcf;
+}
+
+#currentTemp{
+    -fx-font-size: 40;
+    -fx-font: Roboto;
+}
+
+#maxTemp{
+    -fx-font-size: 24;
+    -fx-font: Roboto;
+}
+
+#maxLabel{
+    -fx-font-size: 24;
+    -fx-font: Roboto;
+}
+
+#minTemp{
+    -fx-font-size: 24;
+    -fx-font: Roboto;
+}
+
+#minLabel{
+    -fx-font-size: 24;
+    -fx-font: Roboto;
+}
+
+#feelsLabel{
+    -fx-font-size: 18;
+    -fx-font: Roboto;
+}
+
+#humidityLabel{
+    -fx-font-size: 18;
+    -fx-font: Roboto;
+}
+
+#humidity{
+    -fx-font-size: 18;
+    -fx-font: Roboto;
+}
+
+#feelsLike{
+    -fx-font-size: 18;
+    -fx-font: Roboto;
+}

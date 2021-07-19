@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="main" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MainController">
+   <Label id="cityName" fx:id="cityName" layoutX="249.0" layoutY="14.0" prefHeight="124.0" prefWidth="281.0" text="Label" />
+   <Label fx:id="currentTemp" layoutX="249.0" layoutY="176.0" prefHeight="81.0" prefWidth="162.0" text="Label" />
+   <Label fx:id="maxTemp" layoutX="530.0" layoutY="165.0" prefHeight="51.0" prefWidth="133.0" text="Label" />
+   <Label fx:id="minTemp" layoutX="530.0" layoutY="217.0" prefHeight="57.0" prefWidth="133.0" text="Label" />
+   <Label fx:id="maxLabel" layoutX="433.0" layoutY="165.0" prefHeight="51.0" prefWidth="86.0" text="Max: " />
+   <Label fx:id="minLabel" layoutX="433.0" layoutY="217.0" prefHeight="57.0" prefWidth="86.0" text="Min:" />
+   <VBox fx:id="menu" layoutX="-1.0" prefHeight="724.0" prefWidth="194.0">
+      <children>
+         <Button fx:id="changeUnits" mnemonicParsing="false" onAction="#setFahrenheit" prefHeight="82.0" prefWidth="194.0" text="To Fahrenheit" />
+         <Button fx:id="changeRange" mnemonicParsing="false" onAction="#setToHours" prefHeight="82.0" prefWidth="194.0" text="View Next 7 Hours" />
+      </children>
+   </VBox>
+   <GridPane layoutX="244.0" layoutY="392.0" prefHeight="273.0" prefWidth="1038.0">
+     <columnConstraints>
+       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+     </columnConstraints>
+     <rowConstraints>
+       <RowConstraints maxHeight="85.0" minHeight="10.0" prefHeight="39.0" vgrow="SOMETIMES" />
+       <RowConstraints maxHeight="169.33333333333334" minHeight="10.0" prefHeight="144.33333333333334" vgrow="SOMETIMES" />
+       <RowConstraints maxHeight="105.00000000000003" minHeight="10.0" prefHeight="85.00000000000003" vgrow="SOMETIMES" />
+     </rowConstraints>
+      <children>
+         <Label fx:id="timeTwo" text="Label" GridPane.columnIndex="1" />
+         <Label fx:id="timeOne" prefHeight="17.0" prefWidth="86.0" text="Label" GridPane.columnIndex="0" />
+         <Label fx:id="timeThree" text="Label" GridPane.columnIndex="2" />
+         <Label fx:id="timeFour" text="Label" GridPane.columnIndex="3" />
+         <Label fx:id="timeFive" text="Label" GridPane.columnIndex="4" />
+         <Label fx:id="timeSix" text="Label" GridPane.columnIndex="5" />
+         <Label fx:id="timeSeven" text="Label" GridPane.columnIndex="6" />
+         <Label fx:id="temperatureOne" text="Label" GridPane.rowIndex="2" />
+         <Label fx:id="temperatureTwo" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+         <Label fx:id="temperatureThree" text="Label" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+         <Label fx:id="temperatureFour" text="Label" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+         <Label fx:id="temperatureFive" text="Label" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+         <Label fx:id="temperatureSix" text="Label" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+         <Label fx:id="temperatureSeven" text="Label" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+         <ImageView fx:id="imageOne" fitHeight="107.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+            <effect>
+               <ColorAdjust brightness="1.0" />
+            </effect></ImageView>
+         <ImageView fx:id="imageTwo" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <effect>
+               <ColorAdjust brightness="1.0" />
+            </effect></ImageView>
+         <ImageView fx:id="imageThree" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="1">
+            <effect>
+               <ColorAdjust brightness="1.0" />
+            </effect></ImageView>
+         <ImageView fx:id="imageFour" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="1">
+            <effect>
+               <ColorAdjust brightness="1.0" />
+            </effect></ImageView>
+         <ImageView fx:id="imageFive" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="1">
+            <effect>
+               <ColorAdjust brightness="1.0" />
+            </effect></ImageView>
+         <ImageView fx:id="imageSix" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="1">
+            <effect>
+               <ColorAdjust brightness="1.0" />
+            </effect></ImageView>
+         <ImageView fx:id="imageSeven" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="1">
+            <effect>
+               <ColorAdjust brightness="1.0" />
+            </effect></ImageView>
+      </children>
+   </GridPane>
+   <ImageView fx:id="imageCurrent" fitHeight="240.0" fitWidth="330.0" layoutX="895.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@newCloud.png" />
+      </image>
+      <effect>
+         <ColorAdjust brightness="1.0" />
+      </effect>
+   </ImageView>
+   <Label fx:id="humidityLabel" layoutX="433.0" layoutY="299.0" prefHeight="51.0" prefWidth="86.0" text="Humidity:" />
+   <Label fx:id="humidity" layoutX="519.0" layoutY="296.0" prefHeight="57.0" prefWidth="86.0" text="Label" />
+   <Label fx:id="feelsLabel" layoutX="249.0" layoutY="296.0" prefHeight="57.0" prefWidth="86.0" text="Feels like:" />
+   <Label fx:id="feelsLike" layoutX="335.0" layoutY="296.0" prefHeight="57.0" prefWidth="86.0" text="Label" />
+   <Label fx:id="localLabel" layoutX="849.0" layoutY="299.0" prefHeight="75.0" prefWidth="151.0" text="Local Time:" />
+   <Label fx:id="fullDate" layoutX="1041.0" layoutY="296.0" prefHeight="75.0" prefWidth="231.0" text="Label" />
+
+</AnchorPane>
