@@ -27,7 +27,7 @@ public class API_Connection {
         BufferedReader reader;
         String line;
         StringBuffer responseContent = new StringBuffer();
-        URL url = new URL("https://api.openweathermap.org/data/2.5/onecall?lat=" + lat +"&exclude=minutely&lon=" + lon + "&appid=b79b0e3f0f157a43a092c9f4c4cfdbe4");
+        URL url = new URL("https://api.openweathermap.org/data/2.5/onecall?lat=" + lat +"&exclude=minutely&lon=" + lon + "&appid={}");
 
         HttpURLConnection connection;
         connection = (HttpURLConnection) url.openConnection();
@@ -210,7 +210,7 @@ public class API_Connection {
         BufferedReader reader;
         String line;
         StringBuffer responseContent = new StringBuffer();
-        URL url = new URL("https://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lon+ "&appid=b79b0e3f0f157a43a092c9f4c4cfdbe4");
+        URL url = new URL("https://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lon+ "&appid={}");
         HttpURLConnection connection;
         connection = (HttpURLConnection) url.openConnection();
         connection.setRequestMethod("GET");
